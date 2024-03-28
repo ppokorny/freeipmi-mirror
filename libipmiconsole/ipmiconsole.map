@@ -20,6 +20,7 @@
     ipmiconsole_privilege_level_is_valid;
     ipmiconsole_cipher_suite_id_is_valid;
     ipmiconsole_workaround_flags_is_valid;
+    ipmiconsole_sol_payload_instance_is_valid;
   local:
     *;
 };

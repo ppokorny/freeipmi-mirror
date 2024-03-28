@@ -1662,3 +1662,9 @@ ipmiconsole_workaround_flags_is_valid (unsigned int workaround_flags)
 
   return (1);
 }
+
+int
+ipmiconsole_sol_payload_instance_is_valid (int sol_payload_instance)
+{
+  return IPMI_PAYLOAD_INSTANCE_VALID(sol_payload_instance);
+}

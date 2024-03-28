@@ -1026,6 +1026,17 @@ int ipmiconsole_cipher_suite_id_is_valid (int cipher_suite_id);
  */
 int ipmiconsole_workaround_flags_is_valid (unsigned int workaround_flags);
 
+/*
+ * ipmiconsole_sol_payload_instance_is_valid
+ *
+ * Convenience function to determine if SOL payload instance is valid.
+ * Note that a negative value, which would result in libipmiconsole
+ * using a default value, is considered an invalid input here.
+ *
+ * Returns 1 if workaround flags are valid, 0 if they are not.
+ */
+int ipmiconsole_sol_payload_instance_is_valid (unsigned int workaround_flags);
+
 #ifdef __cplusplus
 }
 #endif
